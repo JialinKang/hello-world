@@ -1,6 +1,5 @@
-# hello-world
-hello_word.php的内容
+# PROGRAM
 -----
-<?php
-  echo "Hello World";
-?>
+program1:
+use Django to establish a Website
+-----
