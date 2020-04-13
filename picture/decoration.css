@@ -1,0 +1,177 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image:url(img/xk.jpg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    /*background-size: 100% auto;*/
+}
+.position{
+	transform-style: preserve-3d;
+	margin: 400px auto;
+	width: 100px;
+	height:100px;
+	transform: rotateX(80deg);
+	perspective: 20000px;
+}
+.all{
+	width: 100px;
+	height: 100px;
+	transform-style: preserve-3d;
+	animation: in 5s linear infinite;
+}
+.box1{
+	transform-style: preserve-3d;
+/*	animation: s1 4.5s linear infinite;*/
+    /*animation: in 5s linear infinite;*/
+}
+.box2{
+	transform-style: preserve-3d;
+	/*animation: t0 5s linear infinite;*/
+}
+.box-page{
+	position: absolute;
+	transform-style: preserve-3d;
+	width:100px;
+	height: 100px;
+}
+
+@keyframes in{
+	0%{transform: rotateZ(0deg);}
+	100%{transform: rotateZ(360deg); }
+}
+
+@keyframes to1{
+	0%{transform: translateZ(50px) scale3d(1,1,1);opacity:0.5; }
+	50%{transform: translateZ(150px) scale3d(2,2,2); opacity:1; }
+	100%{transform: translateZ(50px) scale3d(1,1,1);opacity:0.5;}
+}
+@keyframes to2{
+    0%{transform: translateZ(-50px) scale3d(1,1,1) ;opacity:0.5;}
+	50%{transform: translateZ(-150px) scale3d(2,2,2);opacity:1;}
+	100%{transform: translateZ(-50px) scale3d(1,1,1); opacity:0.5;}
+}
+@keyframes to3{
+	0%{transform: translateY(50px) scale3d(1,1,1) rotateX(-90deg);opacity:0.5;}
+	50%{transform: translateY(150px) scale3d(2,2,2) rotateX(-90deg);opacity:1; }
+	100%{transform: translateY(50px) scale3d(1,1,1) rotateX(-90deg);opacity:0.5; }
+}
+@keyframes to4{
+	0%{transform: translateY(-50px) scale3d(1,1,1) rotateX(-90deg);opacity:0.5; }
+	50%{transform: translateY(-150px) scale3d(2,2,2) rotateX(-90deg);opacity:1; }
+	100%{transform: translateY(-50px) scale3d(1,1,1) rotateX(-90deg);opacity:0.5; }
+}
+@keyframes to5{
+	0%{transform: translateX(-50px) scale3d(1,1,1) rotateY(-90deg) rotateZ(90deg);opacity:0.5; }
+	50%{transform: translateX(-150px) scale3d(2,2,2) rotateY(-90deg) rotateZ(90deg);opacity:1; }
+	100%{transform: translateX(-50px) scale3d(1,1,1) rotateY(-90deg) rotateZ(90deg);opacity:0.5;}
+}
+@keyframes to6{
+	0%{transform: translateX(50px)  scale3d(1,1,1) rotateY(-90deg) rotateZ(90deg);opacity:0.5;}
+	50%{transform: translateX(150px) scale3d(2,2,2) rotateY(-90deg) rotateZ(90deg);opacity:1;}
+	100%{transform: translateX(50px) scale3d(1,1,1) rotateY(-90deg) rotateZ(90deg);opacity:0.5;}
+}
+@keyframes s1{
+	0%{opacity:0.3;}
+	50%{opacity:0.6;}
+	100%{opacity:0.3;}
+}
+
+
+
+.top{
+    background-image: url(img/a6.jpg);
+    background-size: 80px 80px;
+    width: 80px;
+	height: 80px;
+	transform: translateZ(40px);
+	animation: s1 4.5s linear infinite;
+}
+.bottom{
+	background-image: url(img/a7.jpg);
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+	transform: translateZ(-40px);
+	animation: s1 4.5s linear infinite;
+}
+.front{
+	background-image: url(img/a8.jpg);
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+	transform: translateY(40px) rotateX(-90deg);
+	animation: s1 4.5s linear infinite;
+}
+.behind{
+	background-image: url(img/a9.jpg);
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+	transform: translateY(-40px) rotateX(-90deg);
+	animation: s1 4.5s linear infinite;
+}
+.left{
+	background-image: url(img/a10.jpg);
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+	transform: translateX(-40px) rotateY(90deg) rotateZ(-90deg);
+	animation: s1 4.5s linear infinite;
+}
+.right{
+	background-image: url(img/a11.jpg);
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+	transform: translateX(40px) rotateY(90deg) rotateZ(-90deg);
+	animation: s1 4.5s linear infinite;
+
+}
+
+
+
+.top1{
+	background-image: url(img/a0.jpg);
+	background-size: 80px 80px;
+	width: 100px;
+	height: 100px;
+	animation: to1 4.5s linear infinite;
+}
+.bottom1{
+	background-image: url(img/a1.jpg);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	animation: to2 4.5s linear infinite;
+}
+.front1{
+	background-image: url(img/a2.jpg);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	animation: to3 4.5s linear infinite;
+}
+.behind1{
+	background-image: url(img/a3.jpg);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	animation: to4 4.5s linear infinite;
+}
+.left1{
+	background-image: url(img/a4.jpg);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	animation: to5 4.5s linear infinite;
+}
+.right1{
+	background-image: url(img/a5.jpg);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	animation: to6 4.5s linear infinite;
+}
